@@ -1,17 +1,99 @@
-div {
-    padding: 30px;
+html {
+    background-color: #e7cec7;
 }
+
+#container {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+    
+}
+
+header {
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+#instructions {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    width: 70%;
+    margin: auto;
+    border: solid 3px #e7cec7;
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
 button {
-    border-style: none;
-    padding: 0px 0px 0px 0px;
+    border: white;
+    cursor: grab;
     background-color: white;
     
 }
 
-img {
-    width: 125px;
+#gamePlay {
+    width: 80%;
+    margin: auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;   
+    
 }
 
-img:hover {
-    border: solid 2px black;
+#targetNumber {
+    float: left;
+    width: 45%;
+    background-color: #e7cec7;
+    border-radius: 25px;
+    padding-left: 20px;
+    height: 200px;
 }
+
+
+#playerCount {
+    float: right;
+    width: 45%;
+    background-color: #e7cec7;
+    border-radius: 25px;
+    padding-left: 20px;
+    height: 200px;
+}
+
+#crystalImages {
+    clear: both;
+    width: 65%;
+    margin: auto;
+    
+}
+
+#randomNum {
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    text-align: center;
+} 
+
+#scoreCount {
+    font-weight: bold;
+}
+
+
+img {
+    width: 125px;
+    
+}
+
+
+img:active {
+    cursor: grabbing;
+}
+

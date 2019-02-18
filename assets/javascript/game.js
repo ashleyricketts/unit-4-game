@@ -16,11 +16,11 @@ $(document).ready(function() {
 
     }
 
-    
+
     var targetNumber = randomNumber (19, 120);
 
     
-    $("#randomNum").html("Add up to " + targetNumber + " to win!");
+    $("#randomNum").html(targetNumber);
     $("#losses").html("Losses: " + lose);
     $("#wins").html("Wins: " + win);
 
@@ -48,7 +48,8 @@ $(document).ready(function() {
             var crystalValue = ($(this).attr("data-value"));
             crystalValue = parseInt(crystalValue);
             var scoreAdd = score += crystalValue;
-            $("#scoreCount").html("Your current score: " + scoreAdd);
+            $("#scoreCount").html("Your current score: " + scoreAdd); 
+            
 
             if (score === targetNumber) {
                 alert("You win!");

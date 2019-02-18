@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
 
-    <!--Link reset.css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
     <!--Link style.css-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!--Link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Karla" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,43 +21,51 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
-    <div>
+    <div id="container">
         <header>
                 <h1>Crystal Collector</h1>
-        </header><br><br>
+        </header>
 
-
-        <section>
+        <section id="instructions">
+                <h2>Instructions:</h2>
                 <p> By clicking on a crystal below you will add a specific amount
                     of points to your total score.
                 </p>
                 <p> Win the game by matching your total score to the number in the box.
                     Lose the game if your total score goes above the number. 
                 </p>
-                <p> The value of each crystal is hidden from you until you click on it and it
-                    add to your total. Each time the game starts you will try to reach a new number
-                    and the values of your crystals will change. 
+                <p> The value of each crystal is hidden from you until you click on it.
+                    Each time you click a crystal, the points will automatically
+                    add to your score.
                 </p>
-                <p> GOOD LUCK!</p>
+                <p>
+                    Each time the game starts you will try to reach a new number
+                    and the values of your crystals will change. 
+                </p><br>
+                <h2> GOOD LUCK!</h2>
         </section><br><br>
 
 
-        <section>
-                <p id="randomNum"></p><br><br>
-                <p id="wins"></p><br><br>
-                <p id="losses"></p><br><br>
-                
-                <aside>
-                    <p id="scoreCount"></p>
-                </aside><br>
+        <section id="gamePlay">
+                <div id="targetNumber">
+                    <p>Add up to the following number to win!</p>
+                    <p id="randomNum"></p>
+                </div>
 
-                <div>
+                <div id="playerCount">
+                    <p id="scoreCount"></p>
+                    <p id="wins"></p>
+                    <p id="losses"></p>
+                </div>
+        </section>
+
+                <div id="crystalImages">
                     <button><img id="crystal1" src="assets/images/bluerupee.PNG" alt="blue crystal"></button>
                     <button><img id="crystal2" src="assets/images/purplerupee.PNG" alt="purple crystal"></button>
                     <button><img id="crystal3" src="assets/images/greenrupee.PNG" alt="green crystal"></button>
                     <button><img id="crystal4" src="assets/images/goldrupee.PNG" alt="gold crystal"></button>
                 </div>
-        </section>
+    
     </div>
 
 <!--Link to javascript file game.js-->
