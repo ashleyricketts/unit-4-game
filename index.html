@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
+
+    <!--Link reset.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!--Link style.css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -14,13 +20,13 @@
 
 
     <section>
-            <p>By clicking on a crystal below you will add a specific amount
+            <p> By clicking on a crystal below you will add a specific amount
                 of points to your total score.
             </p>
-            <p> You win the game by matching your total score to the number in the box, 
-                you lose the game if your total score goes above the number. 
+            <p> Win the game by matching your total score to the number in the box.
+                Lose the game if your total score goes above the number. 
             </p>
-            <p>The value of each crystal is hidden from you until you click on it and it
+            <p> The value of each crystal is hidden from you until you click on it and it
                 add to your total. Each time the game starts you will try to reach a new number
                 and the values of your crystals will change. 
             </p>
@@ -38,13 +44,18 @@
             </aside>
 
             <div>
-                <img src="assets/images/bluerupee.PNG">
-                <img src="assets/images/purplerupee.PNG">
-                <img src="assets/images/greenrupee.PNG">
-                <img src="assets/images/goldrupee.PNG">
+                <button id="crystal1"><img src="assets/images/bluerupee.PNG" alt="blue crystal"></button>
+                <button id="crystal2"><img src="assets/images/purplerupee.PNG" alt="purple crystal"></button>
+                <button id="crystal3"><img src="assets/images/greenrupee.PNG" alt="green crystal"></button>
+                <button id="crystal4"><img src="assets/images/goldrupee.PNG" alt="gold crystal"></button>
             </div>
     </div>
 
+<!--Link to javascript file game.js-->
+<script src="assets/javascript/game.js"></script>
+
+<!--Link to JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>
 </html>
