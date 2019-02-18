@@ -1,34 +1,66 @@
 
-var randomNum;
+$(document).ready(function() {
+
+    var score = 0;
+    var wins = 0;
+    var losses = 0;
+    
 
 
 
-// Creates random number for player to add to
-function randomNumber(min, max){
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+    // Creates random number for player to add to from 19 - 120
+    function randomNumber(min, max){
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
 
-}
+    }
 
-// Writes randomNumber to document 
-randomNum = document.getElementById("randomNum");
-randomNum.innerHTML = "Add up to " + randomNumber(19, 120) + " to win!";
+    var targetNumber = randomNumber (19, 120);
 
-
-
-function crystalNumber(min, max){
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-
-console.log(crystalNumber(1, 12));
+    // Writes randomNumber to document 
+    $("#randomNum").html("Add up to " + targetNumber + " to win!");
 
 
 
+    // Creates random number for crystals from 1-12
+    function crystalNumber(min, max){
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+
+    // Adds data-value attribute with random value to crystal images
+    $("#crystal1").attr("data-value", crystalNumber(1,12));
+    $("#crystal2").attr("data-value", crystalNumber(1,12));
+    $("#crystal3").attr("data-value", crystalNumber(1,12));
+    $("#crystal4").attr("data-value", crystalNumber(1,12));
 
 
 
 
+    // On-click event to add score up for player
+    $("img").on("click", function() {
+            var crystalValue = ($(this).attr("data-value"));
+            crystalValue = parseInt(crystalValue);
+            var scoreAdd = score += crystalValue;
+            $("#scoreCount").html("Your current score: " + scoreAdd);
+
+            if (score === targetNumber) {
+                alert("You win!");
+            }
+
+            else if (score >= targetNumber) {
+                alert("You lose!")
+            }
+            
+    });
+
+
+
+
+
+
+
+});

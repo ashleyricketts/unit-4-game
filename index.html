@@ -14,6 +14,12 @@
 </head>
 
 <body>
+<!--Link to JQuery-->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
     <header>
             <h1>Crystal Collector</h1>
     </header>
@@ -36,26 +42,25 @@
 
     <div>
             <p id="randomNum"></p>
-            <p id="winCount"></p>
-            <p id="lossCount"></p>
+            <p id="wins"></p>
+            <p id="losses"></p>
             
             <aside>
                 <p id="scoreCount"></p>
             </aside>
 
             <div>
-                <button><img class="crystalimage" src="assets/images/bluerupee.PNG" alt="blue crystal"></button>
-                <button><img class="crystalimage" src="assets/images/purplerupee.PNG" alt="purple crystal"></button>
-                <button><img class="crystalimage" src="assets/images/greenrupee.PNG" alt="green crystal"></button>
-                <button><img class="crystalimage" src="assets/images/goldrupee.PNG" alt="gold crystal"></button>
+                <button><img id="crystal1" src="assets/images/bluerupee.PNG" alt="blue crystal"></button>
+                <button><img id="crystal2" src="assets/images/purplerupee.PNG" alt="purple crystal"></button>
+                <button><img id="crystal3" src="assets/images/greenrupee.PNG" alt="green crystal"></button>
+                <button><img id="crystal4" src="assets/images/goldrupee.PNG" alt="gold crystal"></button>
             </div>
     </div>
 
 <!--Link to javascript file game.js-->
-<script src="assets/javascript/game.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
-<!--Link to JQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 </body>
 </html>
