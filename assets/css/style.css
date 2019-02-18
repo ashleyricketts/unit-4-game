@@ -1,0 +1,17 @@
+div {
+    padding: 30px;
+}
+button {
+    border-style: none;
+    padding: 0px 0px 0px 0px;
+    background-color: white;
+    
+}
+
+img {
+    width: 125px;
+}
+
+img:hover {
+    border: solid 2px black;
+}

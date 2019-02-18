@@ -2,8 +2,8 @@
 $(document).ready(function() {
 
     var score = 0;
-    var wins = 0;
-    var losses = 0;
+    var win = 0;
+    var lose = 0;
     
 
 
@@ -16,10 +16,13 @@ $(document).ready(function() {
 
     }
 
+    
     var targetNumber = randomNumber (19, 120);
 
-    // Writes randomNumber to document 
+    
     $("#randomNum").html("Add up to " + targetNumber + " to win!");
+    $("#losses").html("Losses: " + lose);
+    $("#wins").html("Wins: " + win);
 
 
 
@@ -49,17 +52,23 @@ $(document).ready(function() {
 
             if (score === targetNumber) {
                 alert("You win!");
+                win++;
+                $("#wins").html("Wins: " + win);
             }
 
             else if (score >= targetNumber) {
                 alert("You lose!")
+                lose++;
+                $("#losses").html("Losses: " + lose);
+
+
             }
             
     });
 
-
-
-
+    
+    
+    
 
 
 
