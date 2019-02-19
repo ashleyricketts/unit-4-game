@@ -46,23 +46,24 @@ button {
     width: 80%;
     margin: auto;
     font-family: 'Karla', sans-serif;
-    font-size: 20px;   
+    font-size: 20px;  
+    display: flex; 
+    justify-content: space-between; 
     
 }
 
 #targetNumber {
-    float: left;
-    width: 45%;
+    width: 300px;
     background-color: #e7cec7;
     border-radius: 25px;
     padding-left: 20px;
+    padding-right: 20px;
     height: 200px;
 }
 
 
 #playerCount {
-    float: right;
-    width: 45%;
+    width: 300px;
     background-color: #e7cec7;
     border-radius: 25px;
     padding-left: 20px;
@@ -70,10 +71,9 @@ button {
 }
 
 #crystalImages {
-    clear: both;
-    width: 65%;
-    margin: auto;
-    
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 #randomNum {

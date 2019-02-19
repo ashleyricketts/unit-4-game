@@ -67,7 +67,8 @@ $(document).ready(function() {
             
     });
 
-    
+    //game runs according to instructions but it is very hard to win, 
+    //I am working on how to assign crystals the random numbers under certain conditions so that it is possible to win every time...
     
     
 
